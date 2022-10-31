@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Fragment } from "react"
 import { Dialog, Transition } from "@headlessui/react"
 import { IoCloseOutline } from "react-icons/io5"
@@ -61,10 +62,10 @@ export default function Example({ open, setOpen }) {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
-                  <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
+                  <div className="flex h-full flex-col overflow-y-scroll bg-white dark:bg-neutral-800 shadow-xl">
                     <div className="flex-1 overflow-y-auto py-6 px-4 sm:px-6">
                       <div className="flex items-start justify-between">
-                        <Dialog.Title className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        <Dialog.Title className="text-3xl font-extrabold tracking-tight  sm:text-4xl">
                           Bag
                         </Dialog.Title>
                         <div className="ml-3 flex h-7 items-center">
@@ -90,7 +91,7 @@ export default function Example({ open, setOpen }) {
                           >
                             {cartItems.map((product) => (
                               <li key={product.id} className="flex py-6">
-                                <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
+                                <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border-gray-200">
                                   <img
                                     src={urlFor(product.image)}
                                     alt={product.imageAlt}
@@ -100,7 +101,7 @@ export default function Example({ open, setOpen }) {
 
                                 <div className="ml-4 flex flex-1 flex-col">
                                   <div>
-                                    <div className="flex justify-between text-base font-medium text-gray-900">
+                                    <div className="flex justify-between text-base font-medium ">
                                       <h3>
                                         <a href={product.href}>
                                           {product.name}
@@ -113,7 +114,7 @@ export default function Example({ open, setOpen }) {
                                     </p>
                                   </div>
                                   <div className="flex flex-1 items-end justify-between text-sm">
-                                    <p className="text-gray-500">
+                                    <p >
                                       Qty {product.quantity}
                                     </p>
 
@@ -136,11 +137,11 @@ export default function Example({ open, setOpen }) {
                     </div>
 
                     <div className="border-t border-gray-200 py-6 px-4 sm:px-6">
-                      <div className="flex justify-between text-base font-medium text-gray-900">
+                      <div className="flex justify-between text-base font-medium ">
                         <p>Subtotal</p>
                         <p>${totalPrice}</p>
                       </div>
-                      <p className="mt-0.5 text-sm text-gray-500">
+                      <p className="mt-0.5 text-sm dark:text-gray-200">
                         Shipping and taxes calculated at checkout.
                       </p>
                       <div className="mt-6">
@@ -151,7 +152,7 @@ export default function Example({ open, setOpen }) {
                           Checkout with Stripe
                         </a>
                       </div>
-                      <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
+                      <div className="mt-6 flex justify-center text-center text-sm ">
                         <p>
                           or{" "}
                           <button

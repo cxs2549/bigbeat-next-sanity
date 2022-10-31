@@ -110,7 +110,7 @@ export default function Example({ product }) {
                 <button
                   onClick={() => onAdd(product, 1)}
                   type="button"
-                  className="w-full bg-[#FE5754] border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-semibold text-white  focus:outline-none focus:ring-0"
+                  className="w-full bg-[#FE5754] border border-transparent rounded-full py-3 px-8 flex items-center justify-center text-base font-semibold text-white  focus:outline-none focus:ring-0"
                 >
                   Add to Bag
                 </button>
@@ -128,7 +128,7 @@ export default function Example({ product }) {
                 <div className="mt-4 space-y-6">
 
                   <p className="text-base dark:text-gray-200 text-left">
-                    The {product.name} comes with an amalgamation of style with
+                    The {product.name} comes with an amalgamation of style &
                     performance. Get ready to enjoy your favorite tunes
                     with Super Extra Bass and crystal-clear sound performance. Experience powerful, dynamic sound with
                     punchy bass and clear, natural vocals with the responsive

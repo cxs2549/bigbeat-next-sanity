@@ -23,7 +23,7 @@
             </p>
             <a
               href="#"
-              className="mt-6 inline-block w-full bg-[#FE5754]   border border-transparent rounded-full py-3 px-8 font-medium text-white hover:bg-gray-800 sm:w-auto"
+              className="mt-6 inline-block w-full bg-[#FE5754]   border border-transparent rounded-full py-3 px-8 font-semibold text-white  sm:w-auto"
             >
               Get access to our fall sale
             </a>

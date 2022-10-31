@@ -330,7 +330,7 @@ export default function Example({products}) {
                             <img
                               src={urlFor(product.image)}
                               alt={product.imageAlt}
-                              className="w-full h-full object-center object-cover"
+                              className="w-full h-full object-center object-cover cursor-pointer"
                             />
                           </div>
                           <h3 className="mt-4 font-medium ">

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /*
   This example requires Tailwind CSS v2.0+ 
   
@@ -113,11 +114,12 @@ export default function Example() {
         Footer
       </h2>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <img src="/logo.png" className='w-12 mb-12' alt="" />
         <div className="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
           <div className="grid grid-cols-2 gap-8 xl:col-span-4">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm text-gray-400 font-semibold dark:text-gray-200 tracking-wider uppercase">Solutions</h3>
+                <h3 className="text-sm text-gray-400 font-semibold  tracking-wider uppercase">Solutions</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
@@ -144,7 +146,7 @@ export default function Example() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
-                <ul role="list" className="mt-4 space-y-4">
+                <ul role="list" className="mt-4 space-y-3">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-base dark:text-gray-200 ">
